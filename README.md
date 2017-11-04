@@ -1,5 +1,5 @@
 # gatamaru.github.io
 for educational purpose at 'Gatamaru Programming Camp.'
 
-https://gatamaru.github.io/test.html
+[test](https://gamaru.github.io/test.html)
 
