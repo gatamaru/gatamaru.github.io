@@ -30,15 +30,10 @@ function keydown(){  //矢印キーで方向を設定
     case 39:
       dir="right";
       break;
-    default:  //矢印キー以外を押したら停止
-      dir="stop";
-      break;
   }
 }
-function keyup(){  //
-  if(idir == "stop" || (y%100 == 0 && x%100 == 0) ){
-    idir = dir;
-  }
+
+function keyup(){
     dir="stop";
 }
 
@@ -73,5 +68,5 @@ function falls(){
 
 }
 
-setInterval(falls, 10);  //10/1000秒ごとに関数「falls」を実行
+setInterval(falls, 10);  //5/1000秒ごとに関数「falls」を実行
 </script>
