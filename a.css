@@ -13,6 +13,9 @@ a{
   padding:2px;
   text-decoration: none;
   }
+a:hover{
+  color:#4f6;
+}
 a:link {
   color: #039;
   }
