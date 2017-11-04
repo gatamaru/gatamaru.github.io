@@ -16,6 +16,10 @@ function keisan(){
   var tate = document.getElementById('tate').value;
   var yoko = document.getElementById('yoko').value;
   
+  if(tate=""||yoko=""){
+    alert("数字を入力してください");
+  }
+  
   document.getElementById('shikaku').style.width = yoko + "px";
   document.getElementById('shikaku').style.height = tate + "px";
   
