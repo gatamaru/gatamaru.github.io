@@ -1,0 +1,77 @@
+<!DOCTYPE html><html><meta charset="utf-8">
+<style>body {background-image:URL("tile.png");}</style>
+<div id="shikaku" style="height: 100px; width: 100px; background-color: blue; position: absolute;"></div>
+
+<script>
+var r = document.getElementById('shikaku');
+var dir; //direction
+var idir = "stop"; //inertia direction
+var y = 0;
+var x = 0;
+var w = window.innerWidth ;  //画面の縦幅を取得
+var h = window.innerHeight;  //画面の横幅を取得
+var W = w - w%100 - 100;  //画面の横幅から100px区切りで端数を除去
+var H = h - h%100 - 100;  //画面の縦幅から100px区切りで端数を除去
+
+document.onkeydown = keydown;  //キーが押されたら関数「keydown」を実行
+document.onkeyup = keyup;  //キーが離されたら関数「keyup」を実行
+
+function keydown(){  //矢印キーで方向を設定
+  switch(event.keyCode){
+    case 38:
+      dir="up";
+      break;
+    case 40:
+      dir="down";
+      break;
+    case 37:
+      dir="left";
+      break;
+    case 39:
+      dir="right";
+      break;
+    default:  //矢印キー以外を押したら停止
+      dir="stop";
+      break;
+  }
+}
+function keyup(){  //
+  if(idir == "stop" || (y%100 == 0 && x%100 == 0) ){
+    idir = dir;
+  }
+    dir="stop";
+}
+
+function falls(){
+  if(y%100 == 0 && x%100 == 0){
+    idir = dir;
+  }
+
+    switch(idir){  //方向に応じて座標を変更
+      case "up":
+        y=y-5;
+        break;
+      case "down":
+        y = y+5;
+        break;
+      case "left":
+        x = x-5;
+        break;
+      case "right":
+        x = x+5;;
+        break;
+    }
+
+    //画面端で停止
+  if(y < 0){y = 0;}
+  if(y > H){y = H;}
+  if(x < 0){x = 0;}
+  if(x > W){x = W;}
+    //変更した座標に移動
+  r.style.top = y + "px";
+  r.style.left = x + "px";
+
+}
+
+setInterval(falls, 10);  //10/1000秒ごとに関数「falls」を実行
+</script>
