@@ -1,0 +1,66 @@
+<!DOCTYPE html><html><meta charset="utf-8">
+<div id="shikaku" style="height: 100px;width: 100px;background-color: red;position:absolute;"></div>
+
+<script>
+var r = document.getElementById('shikaku');
+var vector;
+var y = 0;
+var x = 0;
+var W = window.innerWidth;  //画面の縦幅を取得
+var H = window.innerHeight;  //画面の横幅を取得
+
+document.onkeydown = keydown;
+
+function keydown(){
+  switch(event.keyCode){
+    case 38:
+      vector="up";
+      break;
+    case 40:
+      vector="down";
+      break;
+    case 37:
+      vector="left";
+      break;
+    case 39:
+      vector="right";
+      break;
+    default:  //矢印キー以外を押したら停止
+      vector="stop";
+      break;
+  }
+
+}
+
+
+function falls(){
+  switch(vector){
+    case "up":
+      y=y-5;
+      r.style.top = y + "px";
+      
+      break;
+    case "down":
+      y = y+5;
+      r.style.top = y + "px";
+      break;
+    case "left":
+      x = x-5;
+      r.style.left = x + "px";
+      break;
+    case "right":
+      x = x+5;
+      r.style.left = x + "px";
+      break;
+  }
+    //画面端で方向転換
+  if(vector=="up" && y < 0){vector="down"}
+  if(vector=="down" && y > H-100){vector="up"}
+  if(vector=="left" && x < 0){vector="right"}
+  if(vector=="right" && x > W-100){vector="left"}
+}
+
+setInterval(falls, 10);
+
+
+</script>
