@@ -30,8 +30,8 @@ h1 {
   line-height: 90%;
   text-align: center;
   
-      -webkit-animation-name: fadeIn;
-    -webkit-animation-duration: 3s;
+   -webkit-animation-name: fadeIn;
+   -webkit-animation-duration: 3s;
   }
 h2 {
   font-family:'Lato', Calibri, ;
@@ -208,5 +208,4 @@ nav a:hover{background-color:#cff;border-radius:5px;}
 }
 
 
-h1 span{   -webkit-transition: all 0.1s ease; transition: all 0.1s ease;}
-.hov:hover {color:#7f7;}
+h1 span:hover{color:#2a5;}
