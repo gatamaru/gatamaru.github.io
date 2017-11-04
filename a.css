@@ -1,7 +1,7 @@
 body,div,h1,h2,h3,h4,h5,h6,
 pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td {
   color: #111;
-  font-family: 'Lucida Grande', 'Hiragino Kaku Gothic ProN', '繝偵Λ繧ｮ繝手ｧ偵ざ ProN W3', Meiryo, 繝｡繧､繝ｪ繧ｪ, Helvetica, Arial, sans-serif;
+  font-family: 'Lucida Grande', 'Hiragino Kaku Gothic ProN', Meiryo, Helvetica, Arial, sans-serif;
   line-height: 160%;
   margin: 0;
   padding: 0;
@@ -87,25 +87,25 @@ nav a:hover{background-color:#cff;border-radius:5px;}
 
 .menu ul{margin:0;padding:0;}
 .menu ul li {list-style: none;  margin:0;  padding:0;  font-size:14px;  float: left;  position: relative;
-  width: 160px;/*隕ｪ繝｡繝九Η繝ｼ縺ｮ蟷�*/
-  height: 40px;/*隕ｪ繝｡繝九Η繝ｼ縺ｮ鬮倥＆*/
+  width: 160px;
+  height: 40px;
   line-height: 40px;
-  background:#4169E1;/*隕ｪ繝｡繝九Η繝ｼ縺ｮ閭梧勹濶ｲ*/
-  color: #eee;/*隕ｪ繝｡繝九Η繝ｼ縺ｮ譁�ｭ苓牡*/
+  background:#4169E1;
+  color: #eee;
   text-align:center;  font-weight:bold;}
 .menu ul li a {color: #eee;  display: block;  text-decoration: none;}
-.menu ul li:hover, .menu ul li a:hover {background:#EA2839;/*繝帙ヰ繝ｼ譎ゅ�隕ｪ繝｡繝九Η繝ｼ縺ｮ閭梧勹濶ｲ*/
-  color:#fff;/*繝帙ヰ繝ｼ譎ゅ�隕ｪ繝｡繝九Η繝ｼ縺ｮ譁�ｭ苓牡*/}
+.menu ul li:hover, .menu ul li a:hover {background:#EA2839;
+  color:#fff;}
 .menu ul li ul {position: absolute;
-  top: 40px;/*隕ｪ繝｡繝九Η繝ｼ縺ｮ鬮倥＆縺ｨ蜷後§縺ｫ縺吶ｋ*/
+  top: 40px;
   width: 160px;  z-index: 100;}
 .menu ul li ul li {visibility: hidden;  overflow: hidden; text-align: left;padding-left: 10px;
-  width: 260px;/*繧ｵ繝悶Γ繝九Η繝ｼ縺ｮ蟷�*/
-  height: 0;  background:#58b;/*繧ｵ繝悶Γ繝九Η繝ｼ縺ｮ閭梧勹濶ｲ*/}
-.menu ul li ul li:hover, .menu ul li ul li a:hover {background:#FFAFA9;/*繝帙ヰ繝ｼ譎ゅ�繧ｵ繝悶Γ繝九Η繝ｼ縺ｮ閭梧勹濶ｲ*/}
+  width: 260px;
+  height: 0;  background:#58b;}
+.menu ul li ul li:hover, .menu ul li ul li a:hover {background:#FFAFA9;}
 .menu ul li:hover ul li, .menu ul li a:hover ul li{visibility: visible;
   overflow: visible;
-  height:40px;/*繧ｵ繝悶Γ繝九Η繝ｼ縺ｮ鬮倥＆*/
+  height:40px;
   z-index: 10;}
 .menu * {-webkit-transition: 0.5s;
   -moz-transition: 0.5s;
