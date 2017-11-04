@@ -208,6 +208,5 @@ nav a:hover{background-color:#cff;border-radius:5px;}
 }
 
 
-h1 span{   -webkit-transition: all 6s ease; transition: all 6s ease;}
-.CC:hover {color:red;}		.AA:hover {color:darkgreen;}
-.WW:hover {font-size:150%}	.KK:hover {color:orange;}
+h1 span{   -webkit-transition: all 0.1s ease; transition: all 0.1s ease;}
+.hov:hover {color:#7f7;}
