@@ -1,34 +1,30 @@
 <!DOCTYPE html><html><meta charset="utf-8">
-<div id="shikaku" style="height: 100px;width: 100px;background-color: red;position:absolute;top:-100px"></div>
+<div id="shikaku" style="height: 100px;width: 100px;background-color: red;position:absolute;top:-100px;"></div>
 
 <script>
 var r = document.getElementById('shikaku');
 var m = -100;
 var h = 0;
 
-document.onkeydown = keydown;
-
+document.onkeydown = keydown;  //「キーボードが押された時の処理」に「関数keydown」を設定
 
 function keydown(){
-  if(event.keyCode==39){
+  if(event.keyCode==39){  //キーコードが右矢印(39)だった時、右に移動
     console.log(event.keyCode);
     h = h + 5;
     r.style.left = h + "px";
   }
-  if(event.keyCode==37){
+  if(event.keyCode==37){  //キーコードが左矢印(37)だった時、左に移動
     h = h - 5;
     r.style.left = h + "px";
   }
 
 }
 
-
-function falls(){
-  m=m+5
+function falls(){  //四角形を5px下に移動させる
+  m=m+5;
   r.style.top =m + "px";
 }
 
-setInterval(falls, 500);
-
-
+setInterval(falls, 500);  //500/1000秒ごとに「関数falls」を実行する命令
 </script>
