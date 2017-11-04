@@ -1,0 +1,26 @@
+<!DOCTYPE html><html><meta charset="utf-8">
+<link rel="stylesheet" href="kaga.css">
+
+縦<textarea id="tate"></textarea>px<br>
+横<textarea id="yoko"></textarea>px<br>
+
+<a id="keisan">計算する</a>
+
+<p id="kotae"></p>
+
+<div id="shikaku"></div>
+<script>
+
+
+function keisan(){
+  var tate = document.getElementById('tate').value;
+  var yoko = document.getElementById('yoko').value;
+  
+  document.getElementById('shikaku').style.width = yoko + "px";
+  document.getElementById('shikaku').style.height = tate + "px";
+  
+  document.getElementById('kotae').innerHTML = "この四角形の面積は<strong>" + tate * yoko + "</strong>pxです！";
+};
+
+document.getElementById('keisan').onclick = keisan;
+</script>

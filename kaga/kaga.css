@@ -1,0 +1,128 @@
+/*
+●主なプロパティ一覧
+ color	文字色を指定する
+ background	背景の指定をする
+ background-color	背景の色を指定する
+ font-family	フォントの種類を指定する(カンマ区切りで複数指定)
+ font-weight	フォントの太さを指定する
+ line-height	行の高さを指定する
+ text-align	行の揃え位置を指定する
+ width	幅を指定する
+ height	高さを指定する
+ margin	マージンの指定をする
+ padding	パディングの指定をする
+ border	ボーダーの色や太さを指定する
+ position	要素の配置方法を指定する
+ display	要素の表示形式を指定する
+ float	右か左に寄せて配置する
+ clear	右寄せ・左寄せを解除する
+ z-index	要素の重なりの順序を指定する
+*/
+
+#shikaku{
+  background-color: red;
+  width: 0px;
+  height: 0px;
+}
+
+
+
+
+
+*{
+  background-color: #bFF;
+  color:red
+}
+
+
+h1 {
+  font-family: "見出ゴMB31";
+  text-align: center;
+}
+
+h2 {
+  color: white;
+  background-color: blue;
+  font-size: medium;
+  margin: 15px 0 5px;
+  padding: 5px;
+}
+
+h3 {
+  color: white;
+  background-color: #4169E1;
+  font-size: 15px;
+  margin: 15px 0 5px;
+  padding: 5px;
+}
+
+hr{
+  background-color: #fff;
+  border-top: 2px dashed #8c8b8b;
+}
+
+dt{
+  font-weight : bold;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #666666;
+  border-left: 7px solid #666666;
+  padding: 2px;
+}
+dd{  
+  font-size : 90%;
+  line-height : 1.8;
+  margin-bottom : 45px;
+  border-bottom: 1px solid #999999;
+  padding: 30px;
+}
+
+table {
+  border-collapse: collapse;
+  text-align: left;
+  line-height: 1.5;
+  border: 1px solid #ccc;
+}
+th {
+  width: 147px;
+  padding: 10px;
+  font-weight: bold;
+  color: #153d73;
+  background-color:#ddf;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+td {
+  width: 349px;
+  padding: 10px;
+  vertical-align: top;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+
+.container{
+ margin:auto;
+ max-width: 840px;
+}
+
+/* 横に四分割するCSS*/
+.row{
+  max-width: 840px;
+}
+.row:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.column2{
+  border: solid 2px #888;
+  float: left;
+  margin: 4px;
+  max-width: 410px;
+}
+.column4{
+  border: solid 2px #888;
+  float: left;
+  margin: 4px;
+  max-width: 200px;
+}
