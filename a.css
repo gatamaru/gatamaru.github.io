@@ -41,6 +41,7 @@ h2 {
   padding-top: 20px;
   padding-left: 5px;
   text-align: center;
+  -webkit-transition: all 0.5s ease; transition: all 0.5s ease;
   }
 h3{
   margin-top: 25px;
@@ -205,4 +206,13 @@ nav a:hover{background-color:#cff;border-radius:5px;}
     }
 }
 
-h1 span:hover{color:#2a5;}
+h1 span:hover{
+  color:#2a5;
+  position: relative;
+  top: -5px;
+}
+
+h2:hover{
+  color:orange;
+  font-size:155%;
+}
