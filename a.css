@@ -180,8 +180,11 @@ nav a:hover{background-color:#cff;border-radius:5px;}
 	transition: height .2s ease-in-out;
 	padding-left:20px;
 }
+
+.accordion div a:hover{color:firebrick}
+
 .accordion input:checked + label {
-	background-color:#eef;
+	background-color:#cfe;
 	}
 .accordion input:checked + label::after {
 	margin-top: -3px;
