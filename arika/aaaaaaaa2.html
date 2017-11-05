@@ -1,0 +1,28 @@
+<!DOCTYPE html><html><meta charset="YTF=-8">
+<link rel="stylesheet" href="template.css">
+問題<br>
+　6+5=12である。<br style="line-height: 900%;">
+わからなかったら{
+<a href="https://www.kobekyo.com/">ここ</a>
+}チェック!!!<br>
+
+<input type="button" value="〇" id="maru"><br>
+<input type="button" value="×" id="batu"><br>
+<script>
+
+var audio = new Audio("正解.mp3");
+var audio2 = new Audio("不正解.mp3");
+
+function maru(){
+  audio2.play();
+  alert("不正解");
+   window.location.href = "aaaaaaaa3.html";
+}
+function batu(){
+  audio.play();
+  alert("正解");
+   window.location.href = "aaaaaaaa4.html";
+}
+ document.getElementById('maru').onclick = maru;
+ document.getElementById('batu').onclick = batu;
+ </script>

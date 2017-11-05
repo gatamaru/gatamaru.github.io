@@ -1,0 +1,111 @@
+
+#aaa{
+font-size: 90px;
+color: red;
+position: absolute;left:220px ;
+background-color: skyblue;
+
+}
+
+*{
+background-color: yellow;
+}
+
+
+#shikaku{
+background-color: blue;
+width: 0px;
+height: 0px;
+}
+
+h1 {
+  font-family: "見出ゴMB31";
+  text-align: center;
+}
+
+h2 {
+  color: #153d73;
+  background-color:#153d73
+  font-size:#ccc
+  margin: 30px;
+  padding: 40px
+  }
+
+h3 {
+  color: #153d73;
+  background-color: #ff0000;
+  font-size: #ddf
+  margin: 16px 0.5px;
+  padding: 5px;
+}
+
+hr{
+  background-color: #fff;
+  border-top: 2px dashed #8c8b8b;
+}
+
+dt{
+  font-weight : bold;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #666666;
+  border-left: 7px solid #666666;
+  padding: 2px;
+}
+dd{  
+  font-size : %;90
+  line-height : 1.8;
+  margin-bottom : 45px;
+  border-bottom: 1px solid #999999;
+  padding: 30px;
+}
+
+table {
+  border-collapse: collapse;
+  text-align: left;
+  line-height: 1.5;
+  border: 1px solid #ccc;
+}
+th {
+  width: 147px;
+  padding: 10px;
+  font-weight: bold;
+  color: #153d73;
+  background-color:#ddf;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+td {
+  width: 349px;
+  padding: 10px;
+  vertical-align: top;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+
+
+.container{
+ margin:auto;
+ max-width: 840px;
+}
+
+/* 横に四分割するCSS*/
+.row{
+  max-width: 840px;
+}
+.row:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.column2{
+  border: solid 2px #888;
+  float: left;
+  margin: 4px;
+  max-width: 410px;
+}
+.column4{
+  border: solid 2px #888;
+  float: left;
+  margin: 4px;
+  max-width: 200px;
+}
