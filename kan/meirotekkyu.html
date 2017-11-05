@@ -1,0 +1,178 @@
+<!DOCTYPE html><html><meta charset="utf-8">
+
+<link rel="stylesheet" href="template.css">
+
+<div id="goal" class="box"></div>
+<div id="goal" class="box2"></div>
+<div id="goal" class="box3"></div>
+<div id="goal" class="box4"></div>
+<div id="box5" class="box5"></div>
+
+<img src="tekkyuu.png" id="tekkyuu">
+<script>
+
+var r=document.getElementById('tekkyuu');
+var r2=document.getElementById('box5');
+
+var n=400;
+var m=400;
+document.onkeydown=keydown;
+var interval;
+
+function moverigth(){
+  if(n<window.innerWidth){
+  n=n+10
+  r.style.left=n+"px";
+  } else {
+    clearInterval(interval);
+    interval = setInterval(moveleft,10);meiro
+  }
+  goal2();
+   goal1();
+}
+function moveleft(){
+  if(n>0){
+  n=n-10
+  r.style.left=n+"px";
+  } else {
+    clearInterval(interval);
+    interval = setInterval(moverigth,10);
+  }
+  goal2();
+   goal1();
+}
+
+function keydown(){
+  if(event.keyCode==39){//右に動かします
+  	clearInterval(interval);
+    interval = setInterval(moverigth,10);
+
+//     r.style.left=n+"px";
+  }
+  if(event.keyCode==37){//左に動かします
+  	clearInterval(interval);
+    interval = setInterval(moveleft,10);
+  }
+   if(event.keyCode==38){//上に動かします
+  	clearInterval(interval);
+    interval = setInterval(movetop,10);
+    }
+    if(event.keyCode==40){//下に動かします
+  	clearInterval(interval);
+    interval = setInterval(movedown,10);
+}}
+
+function movetop(){
+  if(m>0){
+  m=m-10
+  r.style.top=m+"px";
+ }else {
+    clearInterval(interval);
+    interval = setInterval(movedown,10);
+ }
+  goal2();
+   goal1();
+}
+function movedown(){
+  if(m < window.innerHeight) {
+    m=m+10
+    r.style.top=m+"px";
+  } else {
+    clearInterval(interval);
+    interval = setInterval(movetop,10);
+  }
+  goal2();
+  goal1();
+  
+}
+ 
+
+function goal1() {
+  var box = document.getElementById('goal');
+  // 左上がtop:200,left:200
+  // 左下がtop:200+100-100=220,left:200
+  // 右上がtop:200,left:200+120-100=220
+  // 右下がtop:220,left:220
+  if (200 <=n && n <= 200 && 200 <= m && m <= 200) {
+    clearInterval(interval);
+    alert('Goal1');
+  }
+  if (r2.style.top <=n && n <=r2.style.top+ 200 && r2.style.left <= m && m <= r2.style.left+ 200) {
+    clearInterval(interval);
+    alert('Goal1');
+  }
+}
+
+function goal2() {
+ if (450 <=n && n <=480  && 350 <= m && m <=380 ) {
+    clearInterval(interval);
+    alert('Goal2');
+  }
+}
+
+
+var y=0;
+
+function movebox(){
+  y=y+1;
+  r2.style.top=y+"px";
+  
+  }
+setInterval(movebox,10);
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
