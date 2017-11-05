@@ -1,0 +1,45 @@
+<HTML>
+<BODY>
+<h4 style = "text-align: center;width: 440px;display: inline-block;padding: 0.5em 1em;text-decoration: none;color: #67c5ff;border: double 4px #67c5ff;border-radius: 3px;transition: .4s;">
+WiFi-Control-System for ESP32DevkitC
+</h4>
+
+<br>
+
+<table style = "width: 440px;display: inline-block;padding: 0.3em 1em;text-decoration: none;color: #67c5ff;border: solid 2px #67c5ff;border-radius: 3px;transition: .4s;">
+<tr>
+<td>SSID</td>
+<td>...</td>
+<td>ESP32DevkitC</td>
+<tr>
+<td>PassWord</td>
+<td>...</td>
+<td>password</td>
+</tr>
+<tr>
+<td>IPAddress</td>
+<td>...</td>
+<td>192.168.4.1</td>
+</tr>
+<tr>
+<td>SubnetMask</td>
+<td>...</td>
+<td>255.255.255.0</td>
+</tr>
+</table>
+
+<br>
+
+<a id="LED">ON</a><br/>
+<p>Current Status =</p>
+
+<script>
+function action(){
+	location.href = "/ledon";
+};
+
+document.getElementById('LED').onmouseover = action;
+</script>
+
+</BODY>
+</HTML>

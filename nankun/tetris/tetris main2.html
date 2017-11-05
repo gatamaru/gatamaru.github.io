@@ -1,0 +1,64 @@
+<!DOCTYPE html><html><meta charset="utf-8">
+<div id="boad">
+<div id="shikaku01" style="height: 10px;width: 10px;background-color: red;position:absolute;top:0px;left:0px;"></div>
+</div>
+<link rel="stylesheet" href="tetris_sub.css">
+<script>
+
+var r = document.getElementById('shikaku01');
+var boad = document.getElementById('boad');
+var m = 0;
+var n = 0;
+var cnt = 0;
+var idx = 0;
+var side2;
+var l = 290;
+var array = [290,290,290,290,290,290,290,290,290,290,290,290];
+var dead = "GAME OVER"
+
+document.onkeydown = keydown;
+
+function keydown(){
+  if(event.keyCode==39){
+    n = n+10;
+    cnt = cnt + 1;
+    r.style.left =  n + "px";
+  }
+  if(event.keyCode==37){
+    n = n-10;
+    cnt = cnt - 1;
+    r.style.left =  n + "px";
+  }
+  
+}
+function falls(){
+  m=m+10;
+  r.style.top = m + "px";
+  l = array[cnt];
+  if(m>l){
+    m=350;
+    clone = r.cloneNode(true);
+    side = r.style.left;
+    clone.style.left = side;
+//    if(n!=side2){
+//      console.log(m);
+//    }
+    clone.style.top = m + "px";
+    clone = r.cloneNode(true);
+    side = r.style.left;
+    clone.style.left = side;
+    boad.appendChild(clone);
+   
+    m = 0;
+//    side2 = n;
+    l = l-10;
+    array[cnt] = l;
+    console.log(l);
+  }
+}
+if(l>10){alert(dead)}
+setInterval(falls, 5);
+
+
+</script>
+</html>

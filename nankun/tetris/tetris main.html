@@ -1,0 +1,45 @@
+<!DOCTYPE html><html><meta charset="utf-8">
+<div id="shikaku01" style="height: 10px;width: 10px;background-color: red;position:absolute;top:0px;"></div>
+<div id="shikaku02" style="height: 10px;width: 10px;background-color: blue;position:absolute;top:0px; display: none;"></div>
+<div id="shikaku03" style="height: 10px;width: 10px;background-color: green;position:absolute;top:0px; display: none;"></div>
+<link rel="stylesheet" href="tetris sub.CSS">
+<script>
+
+var r = document.getElementById('shikaku01');
+var m = 0;
+var n = 0;
+document.onkeydown = keydown;
+
+function keydown(){
+  if(event.keyCode==39){
+    n = n+10
+    r.style.left =  n + "px";
+  }
+  if(event.keyCode==37){
+    n = n-10
+    r.style.left =  n + "px";
+  }
+}
+function falls(){
+  m=m+10;
+  r.style.top = m + "px";
+  if(m>300){
+    m=300
+         r = document.getElementById('shikaku02');
+         r.style.display = "block";
+         m = 0;
+         n = 0;
+         }
+  if(m>300){
+    m=290
+         r = document.getElementById('shikaku03');
+         r.style.display = "block";
+         m = 0;
+         n = 0;
+       }  
+    }
+setInterval(falls, 100);
+
+
+</script>
+</html>

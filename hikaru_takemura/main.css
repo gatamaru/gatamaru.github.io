@@ -1,0 +1,29 @@
+* {
+	background-color: #f4b3c2;
+}
+
+.game {
+	position: relative;
+}
+
+#setsumei {
+	position: absolute;
+	top: 30px;
+	left: 530px;
+	color: #000000;
+}
+
+#gamecanvas {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	background-color: #000000;
+}
+
+#scoretext {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	color: #FFFFFF;
+	background-color: rgba(0,0,0,0);
+}

@@ -1,0 +1,63 @@
+<HTML>
+<BODY style = "background-color:#00afcc">
+
+<h4 style = "display: inline-block;font-size:40px;text-align: center; width: 835px;padding: 0.5em 1em; text-decoration: none; color: #FFF;border: double 4px #FFF;border-radius: 3px;transition: .4s;">
+WiFi-Control-System for ESP32DevkitC
+</h4 > 
+<br>
+
+<table style = "display: inline-block;font-size:40px;width: 800px;padding: 0.5em 1em;text-decoration: none;color: #FFF;border: solid 2px ##00afcc;border-radius: 3px;transition: .4s;">
+<tr>
+<td>SSID</td>
+<td>...</td>
+<td>ESP32DevkitC</td>
+<tr>
+<td>PassWord</td>
+<td>...</td>
+<td>password</td>
+</tr>
+<tr>
+<td>IPAddress</td>
+<td>...</td>
+<td>192.168.4.1</td>
+</tr>
+<tr>
+<td>SubnetMask</td>
+<td>...</td>
+<td>255.255.255.0</td>
+</tr>
+<tr>
+<td>Status</td>
+<td>...</td>
+<td id="status"></td>
+</tr>
+</table>
+                    
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<a id="LEDOFF" style="font-size:40px;display: inline-block;text-decoration: none;background: #00afcc;color: #FFF;width: 250px;height: 250px;line-height: 250px;border-radius: 50%;text-align: center;vertical-align: middle;overflow: hidden;box-shadow: 0px 0px 0px 5px ##00afcc;border: dashed 3px #FFF;transition: .4s;left:130px;position: absolute">
+OFF
+</a>
+
+<a id="LEDON" style="font-size:40px;display: inline-block;text-decoration: none;background: #00afcc;color: #FFF;width: 250px;height: 250px;line-height: 250px;border-radius: 50%;text-align: center;vertical-align: middle;overflow: hidden;box-shadow: 0px 0px 0px 5px ##00afcc;border: dashed 3px #FFF;transition: .4s;left:530px;position: absolute">
+ON
+</a>
+<br/>
+
+<script>
+function action(){
+location.href = "/ledon";
+};
+function antiaction(){
+location.href = "/ledoff";
+};
+document.getElementById('LEDON').onmousedown = action;
+document.getElementById('LEDOFF').onmousedown = antiaction;
+</script>
+
+</BODY>
+</HTML>
