@@ -121,7 +121,7 @@ nav a:hover{background-color:#cff;border-radius:5px;}
 #totop {
   background-color: rgba(51,51,51,.4);
   border-radius: 8px 5px 0 0;
-  -webkit-border-radius-topleft: 5px;    /* Safari,Google Chrome逕ｨ */
+  -webkit-border-radius-topleft: 5px;    /* Safari,Google Chrome */
   -moz-border-radius-topleft: 5px;   /* Firefox逕ｨ */
   color: white;
   height: 25px;
@@ -215,4 +215,8 @@ h1 span:hover{
 h2:hover{
   color:orange;
   font-size:155%;
+}
+
+#r:hover{
+ color:red;
 }
