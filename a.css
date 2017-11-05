@@ -192,8 +192,6 @@ nav a:hover{background-color:#cff;border-radius:5px;}
 	border-bottom: 1px solid #bbf;
 }
 
-
-
 @-webkit-keyframes fadeIn {
     0% {
         filter: alpha(opacity=0);
@@ -206,6 +204,5 @@ nav a:hover{background-color:#cff;border-radius:5px;}
         opacity:1;
     }
 }
-
 
 h1 span:hover{color:#2a5;}
