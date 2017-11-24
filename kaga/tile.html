@@ -3,9 +3,11 @@
 <div id="shikaku" style="height: 100px; width: 100px; background-color: blue; position: absolute;"></div>
 
 <script>
-var r = document.getElementById('shikaku');
-var dir; //direction
-var idir = "stop"; //inertia direction
+//四角形を矢印キーでスムーズに動かしながら，100px毎の定位置に停止させるサンプルです．
+
+var r = document.getElementById('shikaku'); //HTMLの四角形のdivをrに代入
+var dir; //direction　動く方向を記録する変数
+var idir = "stop"; //inertia direction　ボタンを離した後も動き続ける方向を示す変数
 var y = 0;
 var x = 0;
 var w = window.innerWidth ;  //画面の縦幅を取得
@@ -38,7 +40,7 @@ function keyup(){
 }
 
 function falls(){
-  if(y%100 == 0 && x%100 == 0){
+  if(y%100 == 0 && x%100 == 0){ //ちょうど100px毎の区切りの位置に移動した時だけ，停止，もしくは方向転換が行える
     idir = dir;
   }
 
